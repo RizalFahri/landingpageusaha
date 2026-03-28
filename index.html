@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite & Byte | Masa Depan Makanan Cepat Saji</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Selamat datang di Bite & Byte. Kedai makanan cepat saji futuristik bertema vektor yang menyajikan gigitan digital di dunia nyata.">
+    <meta name="keywords" content="Bite & Byte, Fast Food, Vector Cafe, Neo-Burger">
+    <meta name="author" content="Bite & Byte Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- External CSS & Fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Micro-animations Script (GSAP) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-burger" style="color: var(--color-primary);"></i>
+                Bite<span style="color: var(--color-primary);"> & </span>Byte
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Beranda</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#menu">Menu</a>
+                <a href="#perks">Fasilitas</a>
+                <a href="#contact" class="btn btn-primary btn-sm">Kunjungi Kami</a>
+            </nav>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="container hero-container">
+            <div class="hero-content gs-up">
+                <div class="tagline">
+                    <span class="pulse-dot"></span> 100% Rasa Buatan Vektor
+                </div>
+                <h1>Rasakan <span>Masa Depan</span> Makanan Cepat Saji</h1>
+                <p>Rasa digital, kepuasan dunia nyata. Bite & Byte menghadirkan pengalaman bersantap paling berwarna di Illustration City. Tanpa piksel, hanya kebaikan vektor murni.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-pizza-slice"></i> Jelajahi Menu</a>
+                    <a href="#contact" class="btn btn-outline">Cari Lokasi</a>
+                </div>
+            </div>
+            
+            <div class="hero-image gs-right">
+                <img src="assets/images/hero_vector_1774720184910.png" alt="Bite and Byte Vector Cafe">
+                <div class="floating-badge">
+                    <i class="fa-solid fa-star"></i> Rating 5.0!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-image gs-left">
+                <div class="image-bg-blob"></div>
+                <img src="assets/images/about_vector_1774720200567.png" alt="Friends eating vector food">
+            </div>
+            
+            <div class="about-content gs-right">
+                <h2>Dirancang untuk <span>Momen Menyenangkan</span></h2>
+                <p>Selamat datang di Bite & Byte, di mana interior kami digambar dengan jalur (paths), titik, dan kurva! Terletak di jantung Illustration City, kami menyajikan makanan super berwarna yang terlihat terlalu indah untuk menjadi kenyataan.</p>
+                <p>Diciptakan oleh tim seniman vektor, setiap makanan di sini dapat diskalakan tanpa batas dan sangat lezat. Datanglah bersama teman-teman Anda dan nikmati pesta berdesain datar (flat-design).</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">10k+</div>
+                        <div class="stat-label">Burger Dirender</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Rasa Terukur</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section-padding">
+        <div class="container">
+            <div class="section-header text-center gs-up">
+                <h2>Menu <span>Digital</span> Kami</h2>
+                <p>Baru saja diekspor dari dapur vektor kami langsung ke meja Anda.</p>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Menu Item 1 -->
+                <div class="menu-card gs-up" data-delay="0.1">
+                    <div class="menu-icon-wrap" style="background-color: #FFE5E5; color: #FF4757;">
+                        <i class="fa-solid fa-burger fa-3x"></i>
+                    </div>
+                    <h3>Neo-Burger</h3>
+                    <p>Patsy ganda ditumpuk dengan keju terukur, kurva tomat, dan selada gulir tak terbatas.</p>
+                    <div class="menu-price">180 Rb</div>
+                </div>
+                
+                <!-- Menu Item 2 -->
+                <div class="menu-card gs-up" data-delay="0.2">
+                    <div class="menu-icon-wrap" style="background-color: #FFF3CD; color: #FFA502;">
+                        <i class="fa-solid fa-hotdog fa-3x"></i>
+                    </div>
+                    <h3>Cyber Dog</h3>
+                    <p>Hotdog yang sempurna secara matematis dengan mustard anti-aliased dan saus tomat neon.</p>
+                    <div class="menu-price">120 Rb</div>
+                </div>
+                
+                <!-- Menu Item 3 -->
+                <div class="menu-card gs-up" data-delay="0.3">
+                    <div class="menu-icon-wrap" style="background-color: #E2F0CB; color: #7BED9F;">
+                        <i class="fa-solid fa-pizza-slice fa-3x"></i>
+                    </div>
+                    <h3>Hex Pizza</h3>
+                    <p>Irisan segitiga yang diisi dengan poligon pepperoni dan gradien mozzarella.</p>
+                    <div class="menu-price">200 Rb</div>
+                </div>
+                
+                <!-- Menu Item 4 -->
+                <div class="menu-card gs-up" data-delay="0.1">
+                    <div class="menu-icon-wrap" style="background-color: #E5F3FF; color: #1E90FF;">
+                        <i class="fa-solid fa-mug-hot fa-3x"></i>
+                    </div>
+                    <h3>Cloud Coffee</h3>
+                    <p>Diseduh dengan gravitasi nol, diberi toping busa krim kocok berposisi absolut.</p>
+                    <div class="menu-price">75 Rb</div>
+                </div>
+                
+                <!-- Menu Item 5 -->
+                <div class="menu-card gs-up" data-delay="0.2">
+                    <div class="menu-icon-wrap" style="background-color: #F8E5FF; color: #D980FA;">
+                        <i class="fa-solid fa-ice-cream fa-3x"></i>
+                    </div>
+                    <h3>Pixel Cone</h3>
+                    <p>Es krim cone yang dirender pada 60 FPS, ditaburi dengan remah-remah kripto berwarna-warni.</p>
+                    <div class="menu-price">55 Rb</div>
+                </div>
+                
+                <!-- Menu Item 6 -->
+                <div class="menu-card gs-up" data-delay="0.3">
+                    <div class="menu-icon-wrap" style="background-color: #FFE5B4; color: #FF7F50;">
+                        <i class="fa-solid fa-martini-glass-citrus fa-3x"></i>
+                    </div>
+                    <h3>Opacity Splash</h3>
+                    <p>Minuman tembus pandang menyegarkan yang berubah rona tergantung pada sudut pandang Anda.</p>
+                    <div class="menu-price">80 Rb</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perks Section -->
+    <section id="perks" class="perks section-padding">
+        <div class="container">
+            <div class="perks-wrapper">
+                <div class="perks-header gs-left">
+                    <h2>Mengapa <span>Bite & Byte?</span></h2>
+                    <p>Kami tidak hanya menyajikan makanan; kami menyajikan pengalaman estetika.</p>
+                    <a href="#contact" class="btn btn-primary mt-3">Kunjungi Kami Hari Ini</a>
+                </div>
+                
+                <div class="perks-grid">
+                    <div class="perk-item gs-up" data-delay="0.1">
+                        <div class="perk-icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h4>Zona Arkade</h4>
+                        <p>Mainkan game retro 8-bit sambil menunggu poligon Anda dimasak.</p>
+                    </div>
+                    <div class="perk-item gs-up" data-delay="0.2">
+                        <div class="perk-icon"><i class="fa-solid fa-wifi"></i></div>
+                        <h4>Wi-Fi Gigabit</h4>
+                        <p>Unduh file Anda secara instan. Internet kami secepat penggorengan kami.</p>
+                    </div>
+                    <div class="perk-item gs-up" data-delay="0.3">
+                        <div class="perk-icon"><i class="fa-solid fa-dog"></i></div>
+                        <h4>Ramah Hewan peliharaan</h4>
+                        <p>Bawa hewan peliharaan virtual dan anjing vektor Anda; mereka mendapatkan byte gratis!</p>
+                    </div>
+                    <div class="perk-item gs-up" data-delay="0.4">
+                        <div class="perk-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h4>Lantatur Instan</h4>
+                        <p>Pesan melalui aplikasi kami dan makanan Anda akan dipancarkan langsung ke dalam mobil Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.06,151.71,133.56,224.5,116.1,257.69,108.23,290.47,97.4,321.39,56.44Z" fill="#1E202C"></path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand gs-up">
+                        <div class="footer-logo">
+                            <i class="fa-solid fa-burger"></i> Bite<span>&</span>Byte
+                        </div>
+                        <p>Tempat makan berbasis vektor pertama di Metaverse. Datanglah apa adanya, pulanglah dalam kondisi render penuh.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links gs-up" data-delay="0.1">
+                        <h4>Navigasi</h4>
+                        <ul>
+                            <li><a href="#home">Beranda Utama</a></li>
+                            <li><a href="#about">Cerita Kami</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#perks">Fitur</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact gs-up" data-delay="0.2">
+                        <h4>Kontak Vektor</h4>
+                        <ul class="contact-list">
+                            <li><i class="fa-solid fa-location-dot"></i> 123 Vector Avenue, Block 4B<br>Illustration City, Metaverse 90210</li>
+                            <li><i class="fa-solid fa-envelope"></i> halo@biteandbyte.fake</li>
+                            <li><i class="fa-solid fa-phone"></i> +99 888 777 6666</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Bite & Byte Corporation. 100% Bisnis Palsu, Vektor Nyata.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navbar Scroll Effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            mobileBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                if(navLinks.classList.contains('active')) {
+                    mobileBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                } else {
+                    mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                }
+            });
+
+            // GSAP Animations
+            if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+                gsap.registerPlugin(ScrollTrigger);
+
+                setTimeout(() => {
+                    // Reveal Elements Up
+                    gsap.utils.toArray('.gs-up').forEach(elem => {
+                        let delay = elem.getAttribute('data-delay') || 0;
+                        gsap.fromTo(elem, 
+                            { y: 60, opacity: 0 }, 
+                            {
+                                y: 0, 
+                                opacity: 1, 
+                                duration: 1.2, 
+                                delay: parseFloat(delay),
+                                ease: "power3.out",
+                                scrollTrigger: {
+                                    trigger: elem,
+                                    start: "top 85%",
+                                    toggleActions: "play none none none"
+                                }
+                            }
+                        );
+                    });
+
+                    // Reveal Elements Left/Right
+                    gsap.fromTo('.gs-left', 
+                        { x: -60, opacity: 0 }, 
+                        {
+                            x: 0, 
+                            opacity: 1, 
+                            duration: 1.2, 
+                            ease: "power3.out",
+                            scrollTrigger: {
+                                trigger: '.gs-left',
+                                start: "top 80%"
+                            }
+                        }
+                    );
+
+                    gsap.fromTo('.gs-right', 
+                        { x: 60, opacity: 0 }, 
+                        {
+                            x: 0, 
+                            opacity: 1, 
+                            duration: 1.2, 
+                            ease: "power3.out",
+                            scrollTrigger: {
+                                trigger: '.gs-right',
+                                start: "top 80%"
+                            }
+                        }
+                    );
+                }, 100);
+            }
+        });
+    </script>
+</body>
+</html>
